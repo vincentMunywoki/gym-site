@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PGC-GYM Landing Page</title>
+  <!-- Ion Icons Js -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <!-- JS -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <div class="menu">
+    <div class="container flex">
+      <!-- Mobile Button -->
+      <div class="mobile-btn">
+        <ion-icon name="grid"></ion-icon>
+      </div>
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/logo.png" alt="" />
+      </div>
+
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="#why-us">Features</a></li>
+        <li class="nav-item"><a href="#explore">Explore</a></li>
+        <li class="nav-item"><a href="book.html">Book Now</a></li>
+      </ul>
+
+      <a href="login.html" class="btn">Login</a>
+    </div>
+  </div>
+  <hr>
+  <div class="login-page">
+        <div class="form">
+            <form class="login-form ">
+                <h2>SIGN IN TO YOUR ACCOUNT</h2>
+                <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass"
+                    autocomplete="off" />
+                <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                    onclick="show()" id="showimg">
+              <span id="vaild-pass"></span>
+              <a href="#"><button type="submit">SIGN IN</button></a>
+              <p class="message"><a href="#">Forgot your password?</a></p>
+              <p class="message"><a href="register.html">Create New Account</a></p>
+            </form>
+        </div>
+    </div>
+  <hr>
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex">
+      <p class="tertiary">
+        &copy; 2023 vincent munywoki. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+  <script src="script.js"></script>
+</body>
+
+</html>

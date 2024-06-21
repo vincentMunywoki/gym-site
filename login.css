@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap");
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(#111, #071a1a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.section {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.header::after,
+.header::before,
+.section::after,
+.section::before {
+  content: "";
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+}
+
+.header::after {
+  left: -200px;
+}
+
+.header::before {
+  right: -200px;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.section {
+  background: #1d1f1e;
+  position: relative;
+  padding: 80px 0;
+}
+
+.section::after {
+  left: -200px;
+}
+
+.section::before {
+  width: 600px;
+  right: -200px;
+}
+
+.section:nth-child(even) {
+  background: #141615;
+}
+
+.section:nth-child(even)::after,
+.section:nth-child(even)::before {
+  display: none;
+}
+
+.primary {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.secondary {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.tertiary {
+  font-size: 15px;
+}
+/* End Base */
+
+/* Menu */
+.menu {
+  width: 100%;
+  background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+  padding: 12px 0;
+}
+
+.menu .container {
+  justify-content: space-between;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover a {
+  color: #29a396;
+  transition: 0.3s linear;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+/* End Menu */
+
+/* Buttons */
+.btn {
+  padding: 10px 28px;
+  background: #165f56;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #fff;
+  color:black;
+  transition: 0.3s linear;
+}
+
+
+/* End Buttons */
+
+/*login styling*/
+
+.form h2 {
+			text-align: center;
+			color: #000;
+			margin-top: 30px;
+		}
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  position: relative;
+  filter: drop-shadow(0 0 2px #000000);
+  border-radius: 5px;
+  width: 360px;
+  height: 420px;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.form img {
+  position: absolute;
+  height: 20px;
+  top: 230px;
+  right: 60px;
+  cursor: pointer;
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.form input:focus {
+  box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+span {
+  color: red;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.form button {
+  outline: 0;
+  background:   #3498db;
+  width: 100%;
+  border: 0;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: black;
+  color: #fff;
+}
+
+.message {
+  margin: 15px 0;
+  text-align: center;
+}
+.form .message a {
+  font-size: 14px;
+  color: #6a62d2;
+  text-decoration: none;
+}
+
