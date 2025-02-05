@@ -3,6 +3,7 @@ document.querySelector(".mobile-btn").addEventListener("click", function () {
   document.querySelector(".menu").classList.toggle("active");
 });
 
+
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
